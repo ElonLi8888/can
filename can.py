@@ -1,3 +1,7 @@
+"""This program uses OpenCV to detect circles in an image. It applies Gaussian blur to reduce noise and then uses Hough Circle Transform to detect circular shapes in the image. 
+The program starts by masking the center of the image and incrementally increases the radius to detect circles within that mask. 
+Once a circle is detected, the program highlights the circle and its center and displays the result. The process stops after detecting the first circle."""
+
 import cv2
 import numpy as np
 
